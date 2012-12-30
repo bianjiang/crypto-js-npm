@@ -3,7 +3,11 @@ Crypto-JS (mirror of http://code.google.com/p/crypto-js/)
 
 This basically tracks the crypto-js project at http://code.google.com/p/crypto-js/ done by Jeff.Mott.OR@gmail.com.
 
-I did nothing but add "if (typeof module !== 'undefined' && module.exports) {module.exports = CrytoJS;}" to the end of the package.
+I did nothing but add 
+	
+	if (typeof module !== 'undefined' && module.exports) {module.exports = CrytoJS;}
+	
+to the end of the package.
 
 My current project only needs part of the whole library, so I created a specific "rollup" to meet my needs.
 
@@ -22,7 +26,7 @@ I might just maintain it and push it to the npm.
 In your node.js package.json, just add 
 
 	"dependencies":{
-        "cryptojs": "git+https://bitbucket.org/h0cked/crypto-js-npm.git"
+        "cryptojs": "git+https://github.com/bianjiang/crypto-js-npm.git"
     }
 
 you should ok... 
